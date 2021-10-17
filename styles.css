@@ -1,0 +1,113 @@
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+* {
+    box-sizing: border-box;
+outline-color: lightblue;
+}
+
+html, body{
+    font-size: 28px;
+    font-family: sans-serif;
+    /* align-self: left; */
+
+}
+
+img {
+  display: flex;
+  max-width: 100%;
+  margin-left: auto;
+margin-right: auto;
+  /* align-: left; */
+
+}
+
+
+.container{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 12px;
+background-color: lightblue;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.flex{
+  /*
+  * When two elements combined exceed 100%
+  * wrap to a new row
+  */
+  flex-wrap: wrap;
+
+
+  /*
+  * When the flex-basis doesn't add up to 100%,
+  * distribute the negative space between the
+  * elements
+  */
+
+  justify-content: space-between;
+  font-size:  2em;
+}
+h1 {text-align: center;
+font-size: 46px;
+padding: 1px}
+h3 {text-align: center;}
+
+h4 {text-align: center;
+  font-size: 36px;
+
+
+
+}
+
+.small-text {font-size: 12;
+text-align: left;}
+
+.icon, .text{
+  padding: 25px;
+  margin-bottom: 22px;
+  border: 1px solid #000;
+  text-align: left;
+  border-style: hidden;
+}
+
+/*
+* Flex-basis between elements in a row add up to
+* 97% and the 3% is distributed
+*/
+.icon {
+  flex-basis: 18%;
+}
+
+.text {
+  flex-basis: 80%;
+  font-size: 22px;
+}
+
+
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {   .flex {display:  flex;}
+    /* Any adjustments for tablets and larger go here.
+    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 729px) {
+    /* Any adjustments for desktop and larger go here.
+    Note these styles will be applied to anything 729px or larger -- so desktop */
+}
